@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#todoList label {
+  width: 80%;
+}
+#todoList li {
+  list-style-type: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0efef;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.todo-item h3 {
+  font-size: 30px;
+}
+.todo-item.done h3 {
+  color: #afa7a7;
+  text-decoration: line-through;
+}
+
+.todo-item button {
+  all: unset;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button.complete {
+  background-color: green;
+  margin-right: 5px;
+}
+button.delete {
+  background-color: red;
+}
